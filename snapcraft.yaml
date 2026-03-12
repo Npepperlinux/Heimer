@@ -28,8 +28,7 @@ parts:
       - -DBUILD_TESTS=OFF
       - -DPACKAGE_TYPE=Snap
       #- -DCMAKE_MODULE_PATH=$CRAFT_STAGE/usr/lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR/cmake
-      #- "-DCMAKE_FIND_ROOT_PATH=$CRAFT_STAGE\\;/snap/kde-qt6-core22-sdk/current\\;/snap/kf6-core22-sdk/current/usr"
-      - -DCMAKE_FIND_ROOT_PATH=$CMAKE_FIND_ROOT_PATH
+      - "-DCMAKE_FIND_ROOT_PATH=$CRAFT_STAGE\\;/snap/kde-qt6-core22-sdk/current\\;/snap/kf6-core22-sdk/current/usr"
     build-packages:
       - libqt6svg6-dev
     build-snaps:
